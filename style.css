@@ -1,7 +1,8 @@
 header {
     border: 1px solid black;
 }
-main{
+
+main {
     border: 1px solid black;
 }
 
@@ -17,7 +18,7 @@ img {
     padding-top: 8px;
 }
 
-.tp--nav--a {
+.site_header--nav--link {
     padding: 20px;
     color: black;
     text-decoration: none;
@@ -28,7 +29,7 @@ li {
 
 }
 
-.search--input {
+.site_header--search {
     border-radius: 25px;
     height: 25px;
     font-style: italic;
@@ -39,51 +40,70 @@ li {
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 200px;
+
 }
 
-/* .tp--btn--login {
-    float: right;
-    padding-right: 20px;
-    padding-top: 10px;
-    color: black;
-    text-decoration: none;
-    background-color: #059862;
-    border-radius: 100px;
-} */
-.btn--signup{
+.site_header--nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.top__nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.site_header--search {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+.button__submit {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.button--signup,
+.button--login {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button--signup {
     background-color: #04AA6D;
-    border-radius: 25px;
-    float: right;
-    padding-right: 10px;
-    padding-top: 10px;
     color: white;
-    margin-right: 5px;
-    padding-left: 10px;
-    
 }
 
-.btn--login{
+.button--login {
     background-color: #D9EEE1;
-    border-radius: 25px;
-    float: right;
-    padding-right: 10px;
-    padding-top: 10px;
     color: black;
-    margin-right: 10px;
-    padding-left: 10px;
 }
 
-.btn--login:hover{
+
+.button--login:hover {
     background-color: #04AA6D;
 }
 
-.menu--nav--a {
+.menu_nav--link {
     text-decoration: none;
     color: white;
     padding: 20px;
 }
 
-.content {
+.main_content {
     background-color: #282a35;
     display: flex;
     justify-content: center;
@@ -92,23 +112,22 @@ li {
     padding-bottom: 100px;
 }
 
-.learntocodecontent--h1 {
+.learn_code--title {
     text-align: center;
     color: white;
     padding-top: 65px;
     font-size: 50px;
 }
 
-.learntocodecontent--h3 {
+.learn_code--subtitle {
     color: #FFF4A3;
     font-weight: 700;
     margin-top: 30px !important;
     font-size: 20px;
     text-align: center;
-
 }
 
-.learntocodecontent--search--input {
+.learn_code--search {
     border-radius: 25px;
     height: 25px;
     font-style: italic;
@@ -121,20 +140,20 @@ li {
     width: 100%;
 }
 
-.learntocodecontent--h4 {
+.learn_code--suggestion {
     text-align: center;
 }
 
-.learntocodecontent--a {
+.learn_code--link {
     color: white;
     font-size: 20px;
 }
 
-.learntocodecontent--a:hover{
-    color:  #FFF4A3;
+.learn_code--link:hover {
+    color: #FFF4A3;
 }
 
-.content1 {
+.section_html {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +161,7 @@ li {
     padding-top: 50px;
 }
 
-.col-left {
+.section_html--left {
     display: block;
     text-align: center;
     padding-bottom: 100px;
@@ -153,7 +172,7 @@ h1 {
     font-size: 50px;
 }
 
-.w3--btn1 {
+.html--button {
     background-color: #04AA6D;
     color: white;
     font-size: 18px;
@@ -165,11 +184,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.w3--btn1:hover {
+.html--button:hover {
     background-color: #059862;
 }
 
-.w3--btn2 {
+.video--button {
     background-color: #FFF4A3;
     color: black;
     font-size: 18px;
@@ -181,11 +200,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.w3--btn2:hover {
+.video--button:hover {
     background-color: #fff080;
 }
 
-.w3--btn3 {
+.reference--button {
     background-color: #282A35;
     color: #fff;
     font-size: 18px;
@@ -197,11 +216,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.w3--btn3:hover {
+.reference--button:hover {
     background-color: #000;
 }
 
-.w3--btn4 {
+.certification--button {
     background-color: #FFC0C7;
     color: #000;
     font-size: 18px;
@@ -213,11 +232,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.w3--btn4:hover {
+.certification--button:hover {
     background-color: #ffb3bb;
 }
 
-.w3--btn5 {
+.try_it--button {
     background-color: #04AA6D;
     color: white;
     font-size: 18px;
@@ -228,11 +247,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.w3--btn5:hover {
+.try_it--button:hover {
     background-color: #059862;
 }
 
-.col-right {
+.section_html--right {
     padding-top: 200px;
     background-color: #E7E9EB;
     padding: 16px;
@@ -240,7 +259,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-.html-code {
+.html_code {
     background-color: #fff;
     border-left: 4px solid #04AA6D;
     font-size: 15px;
@@ -251,7 +270,7 @@ h1 {
     padding-bottom: 20px;
 }
 
-.content2{
+.section_css {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,14 +278,14 @@ h1 {
     padding-top: 50px;
 }
 
-.col-left2{
+.section_css--left {
     display: block;
     text-align: center;
     padding-bottom: 100px;
     padding-right: 100px;
 }
 
-.col-right2{
+.section_css--right {
     padding-top: 200px;
     background-color: #E7E9EB;
     padding: 16px;
@@ -274,7 +293,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-.w3--btn6{
+.css--button {
     background-color: #04AA6D;
     color: white;
     font-size: 18px;
@@ -286,11 +305,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.w3--btn6:hover {
+.css--button:hover {
     background-color: #059862;
 }
 
-.w3--btn7 {
+.css_reference--button {
     background-color: #282A35;
     color: #fff;
     font-size: 18px;
@@ -302,11 +321,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.w3--btn7:hover {
+.css_reference--button:hover {
     background-color: #000;
 }
 
-.css-code {
+.css_code {
     background-color: #fff;
     border-left: 4px solid #04AA6D;
     font-size: 15px;
@@ -316,7 +335,7 @@ h1 {
     padding-right: 120px;
 }
 
-.content3{
+.section_javascript {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,14 +343,14 @@ h1 {
     padding-top: 50px;
 }
 
-.col-left3{
+.section_javascript--left {
     display: block;
     text-align: center;
     padding-bottom: 100px;
     padding-right: 100px;
 }
 
-.col-right3{
+.section_javascript--right {
     padding-top: 200px;
     background-color: #E7E9EB;
     padding: 16px;
@@ -339,7 +358,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-.js-code {
+.javascript_code {
     background-color: #fff;
     border-left: 4px solid #04AA6D;
     font-size: 15px;
@@ -349,7 +368,7 @@ h1 {
     padding-right: 30px;
 }
 
-.w3--btn8{
+.javascript--button {
     background-color: #04AA6D;
     color: white;
     font-size: 18px;
@@ -361,11 +380,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.w3--btn8:hover {
+.javascript--button:hover {
     background-color: #059862;
 }
 
-.w3--btn9{
+.javascript_reference--button {
     background-color: white;
     color: black;
     font-size: 15px;
@@ -377,31 +396,33 @@ h1 {
     padding: 8px 16px;
 }
 
-.w3--btn9:hover {
+.javascript_reference--button:hover {
     background-color: #ffffffc9;
 }
 
-.tp-footer{
+.site_footer--link {
     padding: 75px;
     text-decoration: none;
     color: #FFF4A3;
 }
-.footer{
+
+.footer {
     background-color: #282a35;
     padding-top: 50px;
     padding-bottom: 20px;
 }
-.cnt--h5{
+
+.site_footer--text {
     text-align: center;
     color: white;
 }
 
-.cnt--h5--a{
+.site_footer--link--secondary {
     text-align: center;
     color: white;
 }
 
-.cnt--h5--a:hover{
+.site_footer--link--secondary:hover {
     color: #FFF4A3;
 }
 
@@ -417,28 +438,35 @@ h1 {
 .tag--color {
     color: #999;
 }
-.cssselector--color{
+
+.css_selector--color {
     color: #905;
 }
 
-.cssdelimiter--color{
+.css_delimiter--color {
     color: #999;
 }
-.csspropertyvalue--color{
+
+.css_property_value--color {
     color: #005cc5;
 }
-.cssproperty--color{
+
+.css_property--color {
     color: #d73a49;
 }
-.attribute--color{
+
+.attribute--color {
     color: green;
 }
-.js--color{
+
+.javascript--color {
     color: #000;
 }
-.js--h1{
+
+.section_javascript--title {
     color: #fff;
 }
-.js--h4{
+
+.section_javascript--subtitle {
     color: #fff;
 }
