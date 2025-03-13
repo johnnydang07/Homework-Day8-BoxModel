@@ -18,7 +18,7 @@ img {
     padding-top: 8px;
 }
 
-.site_header--nav--link {
+.header__nav--items {
     padding: 20px;
     color: black;
     text-decoration: none;
@@ -29,21 +29,21 @@ li {
 
 }
 
-.site_header--search {
+.header__nav--search {
     border-radius: 25px;
     height: 25px;
     font-style: italic;
     padding: 5px 0px 5px 15px;
     border: 1px solid rgba(0, 0, 0, 0.25);
     width: 15%;
-    background-image: url(magnifying-glass.png);
+    background-image: url(./images/magnifying-glass.png);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 200px;
 
 }
 
-.site_header--nav {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +51,7 @@ li {
     background-color: white;
 }
 
-.top__nav {
+.header__items {
     display: flex;
     align-items: center;
     list-style: none;
@@ -67,14 +67,14 @@ li {
     margin-left: 20px;
 }
 
-.button__submit {
+.header__button {
     margin-left: auto;
     display: flex;
     gap: 10px;
 }
 
-.button--signup,
-.button--login {
+.header__button--signup,
+.header__button--login {
     padding: 8px 15px;
     border: none;
     border-radius: 20px;
@@ -82,28 +82,28 @@ li {
     font-size: 14px;
 }
 
-.button--signup {
+.header__button--signup {
     background-color: #04AA6D;
     color: white;
 }
 
-.button--login {
+.header__button--login {
     background-color: #D9EEE1;
     color: black;
 }
 
 
-.button--login:hover {
+.header__button--login:hover {
     background-color: #04AA6D;
 }
 
-.menu_nav--link {
+.main__nav--items {
     text-decoration: none;
     color: white;
     padding: 20px;
 }
 
-.main_content {
+.main {
     background-color: #282a35;
     display: flex;
     justify-content: center;
@@ -112,14 +112,14 @@ li {
     padding-bottom: 100px;
 }
 
-.learn_code--title {
+.main__content--title {
     text-align: center;
     color: white;
     padding-top: 65px;
     font-size: 50px;
 }
 
-.learn_code--subtitle {
+.main__content--subtitle {
     color: #FFF4A3;
     font-weight: 700;
     margin-top: 30px !important;
@@ -127,33 +127,33 @@ li {
     text-align: center;
 }
 
-.learn_code--search {
+.main_content--search {
     border-radius: 25px;
     height: 25px;
     font-style: italic;
     padding: 5px 0px 5px 15px;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    background-image: url(magnifying-glass.png);
+    background-image: url(./images/magnifying-glass.png);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 350px;
     width: 100%;
 }
 
-.learn_code--suggestion {
+.main_content--suggestion {
     text-align: center;
 }
 
-.learn_code--link {
+.main_content--link {
     color: white;
     font-size: 20px;
 }
 
-.learn_code--link:hover {
+.main_content--link:hover {
     color: #FFF4A3;
 }
 
-.section_html {
+.html {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +161,7 @@ li {
     padding-top: 50px;
 }
 
-.section_html--left {
+.html__left {
     display: block;
     text-align: center;
     padding-bottom: 100px;
@@ -172,7 +172,7 @@ h1 {
     font-size: 50px;
 }
 
-.html--button {
+.html__left--learn {
     background-color: #04AA6D;
     color: white;
     font-size: 18px;
@@ -184,11 +184,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.html--button:hover {
+.html__left--learn:hover {
     background-color: #059862;
 }
 
-.video--button {
+.html__left--video {
     background-color: #FFF4A3;
     color: black;
     font-size: 18px;
@@ -200,11 +200,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.video--button:hover {
+.html__left--video:hover {
     background-color: #fff080;
 }
 
-.reference--button {
+.html__left--reference {
     background-color: #282A35;
     color: #fff;
     font-size: 18px;
@@ -216,11 +216,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.reference--button:hover {
+.html__left--reference:hover {
     background-color: #000;
 }
 
-.certification--button {
+.html__left--certification {
     background-color: #FFC0C7;
     color: #000;
     font-size: 18px;
@@ -232,11 +232,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.certification--button:hover {
+.html__left--certification:hover {
     background-color: #ffb3bb;
 }
 
-.try_it--button {
+.html__right--tryit {
     background-color: #04AA6D;
     color: white;
     font-size: 18px;
@@ -247,11 +247,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.try_it--button:hover {
+.html__right--tryit:hover {
     background-color: #059862;
 }
 
-.section_html--right {
+.html__right {
     padding-top: 200px;
     background-color: #E7E9EB;
     padding: 16px;
@@ -259,7 +259,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-.html_code {
+.html__right--code {
     background-color: #fff;
     border-left: 4px solid #04AA6D;
     font-size: 15px;
@@ -270,7 +270,7 @@ h1 {
     padding-bottom: 20px;
 }
 
-.section_css {
+.css {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,14 +278,14 @@ h1 {
     padding-top: 50px;
 }
 
-.section_css--left {
+.css__left {
     display: block;
     text-align: center;
     padding-bottom: 100px;
     padding-right: 100px;
 }
 
-.section_css--right {
+.css__right {
     padding-top: 200px;
     background-color: #E7E9EB;
     padding: 16px;
@@ -293,7 +293,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-.css--button {
+.css__left--learn {
     background-color: #04AA6D;
     color: white;
     font-size: 18px;
@@ -305,11 +305,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.css--button:hover {
+.css__left--learn:hover {
     background-color: #059862;
 }
 
-.css_reference--button {
+.css__left--reference {
     background-color: #282A35;
     color: #fff;
     font-size: 18px;
@@ -321,11 +321,27 @@ h1 {
     padding: 8px 16px;
 }
 
-.css_reference--button:hover {
+.css__left--reference:hover {
     background-color: #000;
 }
 
-.css_code {
+.css__left--certification {
+    background-color: #FFC0C7;
+    color: #000;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    width: 150px;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.css__left--certification:hover {
+    background-color: #ffb3bb;
+}
+
+.css__right--code {
     background-color: #fff;
     border-left: 4px solid #04AA6D;
     font-size: 15px;
@@ -335,7 +351,22 @@ h1 {
     padding-right: 120px;
 }
 
-.section_javascript {
+.css__right--tryit {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    width: 150px;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.css__right--tryit:hover {
+    background-color: #059862;
+}
+
+.javascript {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,14 +374,14 @@ h1 {
     padding-top: 50px;
 }
 
-.section_javascript--left {
+.javascript__left {
     display: block;
     text-align: center;
     padding-bottom: 100px;
     padding-right: 100px;
 }
 
-.section_javascript--right {
+.javascript__right {
     padding-top: 200px;
     background-color: #E7E9EB;
     padding: 16px;
@@ -358,7 +389,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-.javascript_code {
+.javascript__right--code {
     background-color: #fff;
     border-left: 4px solid #04AA6D;
     font-size: 15px;
@@ -368,7 +399,7 @@ h1 {
     padding-right: 30px;
 }
 
-.javascript--button {
+.javascript__left--learn {
     background-color: #04AA6D;
     color: white;
     font-size: 18px;
@@ -380,11 +411,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.javascript--button:hover {
+.javascript__left--learn:hover {
     background-color: #059862;
 }
 
-.javascript_reference--button {
+.javascript__left--reference {
     background-color: white;
     color: black;
     font-size: 15px;
@@ -396,14 +427,95 @@ h1 {
     padding: 8px 16px;
 }
 
-.javascript_reference--button:hover {
+.javascript__left--reference:hover {
     background-color: #ffffffc9;
 }
 
-.site_footer--link {
-    padding: 75px;
+.javascript__left--certification {
+    background-color: #FFC0C7;
+    color: #000;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    width: 150px;
+    border-radius: 25px;
     text-decoration: none;
-    color: #FFF4A3;
+    padding: 8px 16px;
+}
+
+.javascript__left--certification:hover {
+    background-color: #ffb3bb;
+}
+
+.html__right--tagname {
+    color: #905;
+}
+
+.html__right--color {
+    color: #999;
+}
+
+.css__right--color {
+    color: #905;
+}
+
+.css__right--delimiter {
+    color: #999;
+}
+
+.css__right--propertyvalue {
+    color: #005cc5;
+}
+
+.css__right--property {
+    color: #d73a49;
+}
+
+.javascript__right--tagname {
+    color: #905;
+}
+
+.javascript__right--color {
+    color: #999;
+}
+
+.javascript__right--property {
+    color: #d73a49;
+}
+
+.javascript__right--attribute {
+    color: green;
+}
+
+.javascript__right--propertyvalue {
+    color: #005cc5;
+}
+
+.javascript__right--black {
+    color: #000;
+}
+
+.javascript__left--title {
+    color: #fff;
+}
+
+.javascript__left--subtitle {
+    color: #fff;
+}
+
+.javascript__right--tryit {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    width: 150px;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.javascript__right--tryit:hover {
+    background-color: #059862;
 }
 
 .footer {
@@ -412,61 +524,22 @@ h1 {
     padding-bottom: 20px;
 }
 
-.site_footer--text {
-    text-align: center;
-    color: white;
-}
-
-.site_footer--link--secondary {
-    text-align: center;
-    color: white;
-}
-
-.site_footer--link--secondary:hover {
+.footer__items {
+    padding: 75px;
+    text-decoration: none;
     color: #FFF4A3;
 }
 
-
-.doctype--color {
-    color: slategray;
+.footer__text {
+    text-align: center;
+    color: white;
 }
 
-.tagname--color {
-    color: #905;
+.footer__text--link {
+    text-align: center;
+    color: white;
 }
 
-.tag--color {
-    color: #999;
-}
-
-.css_selector--color {
-    color: #905;
-}
-
-.css_delimiter--color {
-    color: #999;
-}
-
-.css_property_value--color {
-    color: #005cc5;
-}
-
-.css_property--color {
-    color: #d73a49;
-}
-
-.attribute--color {
-    color: green;
-}
-
-.javascript--color {
-    color: #000;
-}
-
-.section_javascript--title {
-    color: #fff;
-}
-
-.section_javascript--subtitle {
-    color: #fff;
+.footer__text--link:hover {
+    color: #FFF4A3;
 }
